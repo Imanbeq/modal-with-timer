@@ -1,0 +1,81 @@
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.container{
+    display: none;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    background-color: #fccd30;
+    border-radius: 30px;
+    margin: 0 auto;
+
+}
+
+.call{
+    display: block;
+}
+
+img{
+    height: 30px;
+    margin: 10px 0px 0px 24px;
+}
+
+p{
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+
+}
+
+.inp{
+    font-size: 18px;
+    color: white;
+    background-color: #725e2e;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.btn{
+    margin-top: 15px;
+    height: 29px;
+    width: 256px;
+    border-radius: 4px;
+    background-color: #209a95;
+    color: white;
+    font-size: 17px;
+
+}
+
+
+
+.num{
+    color: white;
+    font-size: 40px;
+}
+
+.text{
+    font-size: 14px;
+    text-align: left;
+    margin-right: 30px;
+}
+
+span{
+    color: white;
+    font-size: 40px;
+}
