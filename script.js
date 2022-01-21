@@ -7,7 +7,7 @@ btn.onclick = function() {
 }
 
 span.onclick = function() {
-    modal.style.display = "none";
+    modal.style.display = "none"; 
 }
 
 window.onclick = function(event) {
@@ -18,39 +18,20 @@ window.onclick = function(event) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let time = 1680;
-const minuteElement = document.querySelector("#m");
+let time = 2800;
 const secondElement = document.querySelector("#s");
+const milisecondElement = document.querySelector("#ms");
 const buttonElement = document.querySelector("#btn");
 
 buttonElement.addEventListener("click", () =>{
-    setInterval(startClock, 1000);
+    setInterval(startClock, 10);
 })
 
 function startClock() {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    minuteElement.textContent = `${minutes}`;
+    const seconds = Math.floor(time / 100);
+    let miliseconds = time % 100;
+    miliseconds = miliseconds < 10 ? "0" + miliseconds : miliseconds;
     secondElement.textContent = `${seconds}`;
+    milisecondElement.textContent = `${miliseconds}`;
     time--;
 }

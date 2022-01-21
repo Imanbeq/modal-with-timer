@@ -10,25 +10,30 @@
 </head>
 <body>
 
-<button id="myBtn">Открыть</button>
+<button id="myBtn" class="open">Открыть</button>
 
-<div class="container" id="myModal">
-    <span class="close">&times;</span>
-    <img src="rocket-svgrepo-com.svg" alt="">
-    <p class="call">-Хотите перезвоним вам <br>за <strong>28</strong> секунд?</p>
-        <input class="inp" type="text" placeholder="+7">
-        <button class="btn" id="btn">Жду звонка</button>
+<div id="myModal" class="modal">
 
-        <div class="clock">
-            <p class="num" id="h">00 </p> <span>:</span> <p class="num" id="m">28 </p>
-            <span>:</span>
-            <p class="num" id="s"> 00</p>
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <div class="container" id="myModal">
+                <img src="rocket-svgrepo-com.svg" alt="">
+                <p class="call">-Хотите перезвоним вам <br>за <strong>28</strong> секунд?</p>
+                <input class="inp" type="text" placeholder="+7">
+                <button class="btn" id="btn">Жду звонка</button>
+
+                <div class="clock">
+                    <p class="num" id="m">00 </p> <span>:</span> <p class="num" id="s">28 </p><span>:</span><p class="num" id="ms"> 00</p>
+                </div>
+
+                <p class="text">Свободных операторов на линии: 10. <br>В процессе разговора с клиентами:15. <br>Обслуженных вызовов на сегодня: 350.</p>
+
+            </div>
+
         </div>
 
-        <p class="text">Свободных операторов на линии: 10. <br>В процессе разговора с клиентами:15. <br>Обслуженных вызовов на сегодня: 350.</p>
-
-</div>
-
-<script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
